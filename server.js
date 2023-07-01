@@ -48,6 +48,12 @@ app.use("/api/parameter/", require("./src/routes/parameterApi"));
 //Form import
 // app.use("/api/import/", require("./src/routes/importFormApi"));
 
+app.use("/api/parameter/", require("./src/routes/parameterApi"));
+//Form import
+app.use("/api/import/", require("./src/routes/importFormApi"));
+app.use("/api/stuff/", require("./src/routes/stuffApi"));
+app.use("/api/statistic/", require("./src/routes/statisticApi"));
+
 app.use(
   bodyParser.urlencoded({
     limit: "1000kb",
